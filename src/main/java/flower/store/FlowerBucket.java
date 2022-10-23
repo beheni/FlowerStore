@@ -3,13 +3,13 @@ import lombok.Getter;
 import java.util.ArrayList;
 public class FlowerBucket {
     @Getter
-    private ArrayList<FlowerPack> pack_lst = new ArrayList<FlowerPack>();
+    private ArrayList<FlowerPack> packList = new ArrayList<FlowerPack>();
     private double price;
-    FlowerBucket(){
+    FlowerBucket() {
         price = 0;
     }
     public void add(FlowerPack pack) {
-        pack_lst.add(pack);
+        packList.add(pack);
         price += pack.getPrice();
     }
     public double getPrice() {
